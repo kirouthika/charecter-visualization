@@ -1,0 +1,16 @@
+
+.profile-img{
+    display: block;
+    cursor: pointer;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    overflow: hidden;
+    border: 3px solid #ccc;
+}
+.profile-img img{
+    width: 40px;
+}
+.profile-img:hover{
+    border: 3px solid #b4b4b4;
+}

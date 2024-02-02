@@ -1,0 +1,17 @@
+.container{
+    width: 50%;
+    margin: 50px auto 30px;
+}
+.text-center{
+    text-align: center;
+}
+.m-auto{
+    margin: auto;
+}
+/* mediaquery for devices */
+@media screen and (max-width: 768px){    
+    .container{
+        width: 90%;
+        margin: 30px auto;
+    }
+}

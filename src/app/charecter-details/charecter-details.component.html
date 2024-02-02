@@ -1,0 +1,45 @@
+
+<mat-card>
+    <mat-card-header class="d-flex card-header">
+        <div mat-card-avatar style="background: url('{{character.image}}') no-repeat; background-size: cover;"></div>
+        <div class="mr-auto p-2">
+            <h1>Hi, {{ character.name}}</h1>
+        </div>
+    </mat-card-header>
+    <mat-card-content>
+        <p class="details">
+            Status : 
+            <span>{{character.status}}</span>
+        </p>
+        <p class="details">Created On : 
+            <span>{{character.created | date}}</span>
+        </p>
+        <p class="details">
+            Location : 
+            <span>{{character.location.name}}</span>
+        </p>
+        <p class="details">
+            Orgin : 
+            <span>{{ character.origin.name }}</span>
+        </p>
+        <p class="details">
+            Species : 
+            <span>{{ character.species }}</span>
+        </p>
+        <p class="details">
+            Gender :
+            <span>{{ character.gender }}</span> 
+        </p>
+        <p class="details">
+            Status :
+            <span>{{ character.status }}</span> 
+        </p>
+    </mat-card-content>
+    <mat-card-footer>
+        <p>
+            <button class="button back-btn" (click)="goBack()">
+                <mat-icon aria-hidden="false" aria-label="Example home icon" fontIcon="home"></mat-icon>
+            </button>
+        </p>
+    </mat-card-footer>
+</mat-card>
